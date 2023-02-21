@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo-Index.css">
 
 </head>
@@ -31,14 +32,30 @@
     </header>
 
     <main>
-        <div class="main__slider">
-            <ul class="main_imagenesSlider">
-                <li id="slide--primero"><img src="imagenes/nails1.jpg" alt=""></li>
-                <li id="slide--segundo"><img src="imagenes/muestrario.jpg" alt=""></li>
-                <li id="slide--tercero"><img src="imagenes/manicuria.jpg" alt=""></li>
-                <li id="slide--cuarto"><img src="imagenes/nailColor.jpg" alt=""></li>
-            </ul>
-        </div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/nails1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/muestrario.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/manicuria.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button id="main__btnPrev" class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button id="main__btnNext" class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        
+
 
         <h3>Un poco sobre mi</h3>
         <div class="main__descripcion">
@@ -83,5 +100,6 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

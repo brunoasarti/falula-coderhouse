@@ -140,6 +140,10 @@ button {
     cursor: pointer;
 }
 
+#main__btnNext, #main__btnPrev {
+    background-color: transparent;
+}
+
 #botonWhatsApp {
     background-color: #03C100;
     border: 4px white solid;
@@ -268,16 +272,14 @@ button {
 /* INICIO NOSOTROS */
 
 #main__contenedorNosotros {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    align-items: center;
+    padding: 20px;
+
 
 }
 
 .main__sobreNosotros {
-    width: 80%;
-    font-size: 26px;
+    font-size: 22px;
+    margin-bottom: 40px;
 
 }
 
@@ -294,8 +296,8 @@ button {
 }
 
 #main__contenedorNosotros img {
-    width: 20%;
-    margin: 20px;
+    width: 100%;
+    margin: 10px;
     box-shadow: 0 0 4px 2px rgba(88, 1, 105, 0.3) ;
 }
 
@@ -344,7 +346,7 @@ button {
 footer {
     margin-top: 25px;
     padding-top: 25px;
-    padding-bottom: 15px;
+    
     background-color: #d58cfc;
     display: flex;
     
@@ -484,11 +486,13 @@ button:hover {
         width: 100%;
     }
 
+    
     .main__sobreNosotros {
         width: 100%;
-        font-size: 26px;
-    
-    }
+        font-size: 18px;
+        margin-bottom: 40px;
+
+}
 
     #main__contenedorContacto {
         
