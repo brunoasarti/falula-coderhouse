@@ -1,0 +1,123 @@
+main {
+    min-height: 600px;
+    .main__contenedor {
+        display: flex;
+        flex-direction:row;
+        align-content: center;
+
+    }
+    .main__contenedorInverso {
+        display: flex;
+        flex-direction:row;
+        align-content: center;
+    }
+    
+    .main__contenedorImagenes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+        margin: 20px auto 20px;
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            box-shadow: 0px 0px 5px 1px map-get($colors , sombra-img);
+            
+        }
+    }
+
+    .main__textoDescriptivoContenedor {
+        text-align: left;
+        padding: 40px;
+        font-size: 20px;
+        width: 50%;
+    }
+    
+    .main__lineaHorizontal {
+        width: 62%;
+        border: 1px map-get($colors , color-terciario) dashed;
+        margin: 5px auto 5px;
+    }
+}
+
+
+// Formato celular
+
+@media (max-width: 576px) {
+    main {
+        .main__contenedor {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+    
+        .main__contenedorInverso {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .main__contenedorImagenes {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            width: 100%;
+            img {
+                width: 100px;
+                height: 100px;
+                
+                
+            }
+        }
+        .main__textoDescriptivoContenedor {
+            width: 100%;
+        }
+    }
+   
+    
+}
+
+// Formato tablet
+
+@media (min-width: 576px) and (max-width:992px) {
+    main {
+        .main__contenedor {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "imagenes texto texto";
+        }
+        .main__contenedorInverso {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "texto texto imagenes";
+
+        }
+        .main__textoDescriptivoContenedor {
+            width: 100%;
+            grid-area: texto;
+    
+        }
+        .main__contenedorImagenes {
+            display: flex;
+            flex-direction: column;
+            grid-area: imagenes;
+            img {
+                width: 100px;
+                height: 100px;
+                
+                
+            }
+        }
+
+
+}
+}
+
+
+
+

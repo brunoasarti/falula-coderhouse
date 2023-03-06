@@ -1,0 +1,31 @@
+@import "../general/colors.scss";
+
+#main__contenedorNosotros {
+    padding: 20px;
+    .main__sobreNosotros {
+        font-size: 22px;
+        margin-bottom: 40px;
+        text-align: justify;
+    
+    }
+    img {
+        width: 95%;
+        margin: 10px;
+        box-shadow: 0 0 4px 3px map-get($colors , sombra-img);
+    }
+}
+
+/* Formato celular */
+
+@media (max-width: 576px) {
+    #main__contenedorNosotros .main__sobreNosotros{
+        
+            width: 100%;
+            font-size: 18px;
+            margin-bottom: 40px;
+    
+    
+    }
+
+}
+

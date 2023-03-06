@@ -1,0 +1,43 @@
+@import "../general/colors.scss";
+
+footer {
+    min-height: 100px;
+    margin-top: 25px;
+    padding-top: 25px;
+    background-color: map-get($colors , color-barra);
+    display: flex;
+    .footer__izquierdo {
+        width: 50%;
+        text-align: center;       
+    }
+
+    .footer__derecho {
+        width: 50%;
+        text-align: center;
+        a img {
+            width: 35px;
+        }
+        
+    }
+
+    
+    
+}
+
+@media (max-width: 576px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        .footer__izquierdo {
+            padding-top: 0;
+            width: 100%;
+            
+        }
+        .footer__derecho {
+            padding-top: 1px;
+            width: 100%;
+            padding-bottom: 15px;
+            
+        }
+    }
+}

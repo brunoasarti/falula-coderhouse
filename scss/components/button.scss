@@ -1,0 +1,52 @@
+@import "../general/colors.scss";
+@import "../general/mixin.scss";
+
+button {
+    background-color: map-get($colors , color-terciario);
+    border: 1px map-get($colors , borde-btn) solid;
+    border-radius: 15px;
+    color: map-get($colors , letra);
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 24px;
+    cursor: pointer;
+
+}
+
+#main__btnNext, #main__btnPrev {
+    background-color: transparent;
+}
+
+// @mixin color ($colorResaltado,$sombra){
+//     background-color: $colorResaltado;
+//     box-shadow: 0 0 3px 0.4px $sombra;
+// }
+
+#botonWhatsApp {
+    @extend button;
+    @include color(map-get($colors , whatsapp),map-get($colors , sombra));
+    
+
+}
+
+.btn-producto {
+    @extend button;
+    @include color(map-get($colors , color-terciario),map-get($colors , sombra));
+    &:hover {
+        background-color: map-get($colors , color-primario);
+        color: map-get($colors , sombra);
+    }
+
+}
+
+
+// Animaciones
+button {
+    transition: transform 0.4s ease-in-out;
+}
+button:hover {
+    transform: translateY(-2px);
+    @include color(map-get($colors , color-secundario), rgb(75, 0, 62));
+    transition: 0.4s ease-in-out;
+}
