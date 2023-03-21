@@ -1,12 +1,22 @@
 .card {
     
     .card-body {
-        .card--espaciado {
-            margin-top: 20px;
-        }
+
         
         .card-text {
-            height: 300px;
+            height: 150px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 6;
+            line-clamp: 6;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .card-text:active {
+            display: block;
+            min-height: 150px;
+            height: auto;
+            font-size: 14px;
         }
     }
     

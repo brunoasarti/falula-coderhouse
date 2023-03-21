@@ -1,5 +1,6 @@
 @import "../general/colors.scss";
 
+
 header {
     .header__portada {
         width: 100%;
@@ -21,23 +22,35 @@ header {
     }
     
     #header__nav {
+    
+        margin-bottom: 25px;
         .header_barraNavegador {
             background-color: map-get($colors , color-barra);
             box-shadow: 0px 0px 5px 0.2px map-get($colors , sombra);
             display: flex;
             justify-content: center;
             font-family: 'Dancing Script', cursive;
+            margin: 0;
+            padding: 0;
+            
+            
+            
             li{
                 list-style-type: none;
                 margin: 30px;
                 margin-top: 15px;
                 margin-bottom: 15px;
+                
+                
                 .header__navegadorA {
+                    
                     font-size: 22px;
                     flex-direction: row;
+                    
                     text-decoration: none;
                     color: map-get($colors , letra);
                     text-shadow: 0px 0px 5px map-get($colors , color-terciario);
+                    
                     &:hover {
                         color: map-get($colors , color-secundario);
                         
@@ -59,6 +72,7 @@ header {
     .header_barraNavegador {
         flex-direction: column;
         align-items: center;
+        
     }
 
 
@@ -74,6 +88,8 @@ header {
         } 
     
     }
+
+
 
  
 } 

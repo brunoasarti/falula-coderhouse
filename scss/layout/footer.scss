@@ -1,14 +1,24 @@
 @import "../general/colors.scss";
 
 footer {
-    min-height: 100px;
-    margin-top: 25px;
-    padding-top: 25px;
+    min-height: 90px;
+    margin-top: 20px;
+    padding-top: 20px;
     background-color: map-get($colors , color-barra);
     display: flex;
     .footer__izquierdo {
         width: 50%;
-        text-align: center;       
+        text-align: center;
+        h4 {
+            color: map-get($colors , sombra);
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            color: map-get($colors , sombra);
+            margin: 0;
+            padding: 0;
+        }        
     }
 
     .footer__derecho {
@@ -27,16 +37,18 @@ footer {
 @media (max-width: 576px) {
     footer {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         .footer__izquierdo {
             padding-top: 0;
+            margin-bottom: 15px;
             width: 100%;
+
             
         }
         .footer__derecho {
-            padding-top: 1px;
+            
             width: 100%;
-            padding-bottom: 15px;
+            
             
         }
     }

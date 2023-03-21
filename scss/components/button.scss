@@ -18,10 +18,7 @@ button {
     background-color: transparent;
 }
 
-// @mixin color ($colorResaltado,$sombra){
-//     background-color: $colorResaltado;
-//     box-shadow: 0 0 3px 0.4px $sombra;
-// }
+
 
 #botonWhatsApp {
     @extend button;
@@ -31,6 +28,7 @@ button {
 }
 
 .btn-producto {
+    margin-top: 5px;
     @extend button;
     @include color(map-get($colors , color-terciario),map-get($colors , sombra));
     &:hover {
@@ -50,3 +48,5 @@ button:hover {
     @include color(map-get($colors , color-secundario), rgb(75, 0, 62));
     transition: 0.4s ease-in-out;
 }
+
+

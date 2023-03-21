@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilo-Index.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -44,9 +43,18 @@
                 </div>
                 <form action="#">
                     <div>
-                        <textarea name="espacioARellenar" class="espacioARellenar" placeholder="Escriba su texto aquí"></textarea>
+                        
+                        <input placeholder="Nombre y Apellido" type="text" class="espacioDatos" id="nombreCliente" name="nombreCliente" required>
                     </div>
-                    <button type="submit" >Enviar</button>
+
+                    <div>
+                        
+                        <input placeholder="Celular" type="number" class="espacioDatos" id="telefono" name="telefono" required>
+                    </div>
+                    <div>
+                        <textarea name="espacioARellenar" class="espacioARellenar" placeholder="Indicanos el servicio que necesitas."></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
                 </form>
             
             </div>
